@@ -1,0 +1,3 @@
+I am creating a ruby rails application using the tutorial from the RailsApp Project and open sourcing it here. 
+
+Contact: kylecrop@utexas.edu
