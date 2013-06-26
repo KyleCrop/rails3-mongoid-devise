@@ -16,6 +16,3 @@
 <% end %>
 
 <%= render "devise/shared/links" %>
-
-<p><%= f.label :name %><br />
-<%= f.text_field :name %></p>

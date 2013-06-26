@@ -20,7 +20,7 @@
   <%= f.password_field :current_password %></div>
 
   <div><%= f.submit "Update" %></div>
-<% end %>
+<% end %>config.filter_parameters += [:password, :password_confirmation]
 
 <h3>Cancel my account</h3>
 
@@ -29,4 +29,4 @@
 <%= link_to "Back", :back %>
 
 <p><%= f.label :name %><br />
-<%= f.text_field :name %></p>
+  <%= f.text_field :name %></p>
