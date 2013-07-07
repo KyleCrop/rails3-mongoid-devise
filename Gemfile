@@ -7,6 +7,7 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   gem 'uglifier', '>= 1.0.3'
 end
+gem 'thin'
 gem 'jquery-rails'
 gem "mongoid", ">= 3.0.3"
 gem "rspec-rails", ">= 2.11.0", :group => [:development, :test]
@@ -18,3 +19,7 @@ gem "cucumber-rails", ">= 1.3.0", :group => :test, :require => false
 gem "launchy", ">= 2.1.2", :group => :test
 gem "factory_girl_rails", ">= 4.0.0", :group => [:development, :test]
 gem "devise", ">= 2.1.2"
+
+group :production do
+  gem 'thin'
+end
