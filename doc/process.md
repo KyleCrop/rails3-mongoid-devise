@@ -12,3 +12,11 @@
     git commit -m "Removed tracked files now in ignore list."
     git clean -dfx .
 
+## Rails
+### Start a new feature branch
+
+    git flow feature start school
+
+### Generate scaffolding
+
+    
