@@ -13,9 +13,10 @@
   <%= f.password_field :password_confirmation %></div>
 
   <div><%= f.submit "Sign up" %></div>
+
+  <p><%= f.label :name %><br />
+  <%= f.text_field :name %></p>
 <% end %>
 
 <%= render "devise/shared/links" %>
 
-<p><%= f.label :name %><br />
-  <%= f.text_field :name %></p>
