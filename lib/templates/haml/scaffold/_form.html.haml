@@ -1,5 +1,5 @@
 = simple_form_for @<%= singular_table_name %>, html: { class: 'custom' } do |form|
-  = f.error_notification
+  = form.error_notification
 
   .form-inputs
   <%- attributes.each do |attribute| -%>
@@ -7,4 +7,4 @@
   <%- end -%>
 
   .form-actions
-    = f.button :submit
+    = form.button :submit

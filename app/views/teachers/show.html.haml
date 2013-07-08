@@ -7,6 +7,10 @@
   %b Last name:
   = @teacher.last_name
 
+%p
+  %b School
+  = @teacher.school.name
+
 = link_to 'Edit', edit_teacher_path(@teacher)
 \|
 = link_to 'Back', teachers_path

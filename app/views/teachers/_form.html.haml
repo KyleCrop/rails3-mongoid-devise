@@ -1,9 +1,10 @@
 = simple_form_for @teacher, html: { class: 'custom' } do |form|
-  = f.error_notification
+  = form.error_notification
 
   .form-inputs
     = form.input :first_name
     = form.input :last_name
+    = form.association :school, collection: School.all
 
   .form-actions
-    = f.button :submit
+    = form.button :submit
