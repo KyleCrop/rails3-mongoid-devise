@@ -13,15 +13,46 @@
     git clean -dfx .
 
 ## Rails
-### Start a new feature branch
+### Scaffold a resource
+
+For example, scaffold the `school` resource.
+
+#### Start a new feature branch
 
     git flow feature start school
 
-### Generate scaffolding
+#### Generate scaffolding
 
     rails g scaffold School name:string
 
-Add the route `resources :schools` to `config/routes.rb`, then commit.
+#### Examine all seven controller methods
+
+    rails s
+
+1. Index
+2. New
+3. Show
+4. Edit
+5. Create
+6. Update
+7. Destroy
+
+#### Commit
 
     git ar
     git commit -m "Scaffolded school."
+
+#### Link with other resources
+
+In `app/views/schools/_form.html.haml`, add form associations for other resources. For example, to link `teacher` with `school`, add
+
+    = form.association :teacher
+
+#### Close feature branch
+
+    git flow feature finish school
+
+#### Push to origin and Heroku
+
+    git push origin develop
+    git push heroku develop:master
