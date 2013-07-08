@@ -11,6 +11,10 @@ gem 'jquery-rails'
 gem 'haml'
 gem 'simple_form'
 
+group :development do
+  gem 'haml-rails'
+end
+
 group :test do
   gem 'capybara', '>= 1.1.2'
   gem 'database_cleaner', '>= 0.8.0'
