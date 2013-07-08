@@ -19,4 +19,9 @@
 
 ### Generate scaffolding
 
-    
+    rails g scaffold School name:string
+
+Add the route `resources :schools` to `config/routes.rb`, then commit.
+
+    git ar
+    git commit -m "Scaffolded school."
