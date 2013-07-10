@@ -1,5 +1,8 @@
 Rails3MongoidDevise::Application.routes.draw do
 
+  resources :schools
+
+
   root :to => "home#index"
   devise_for :users
   resources :users
