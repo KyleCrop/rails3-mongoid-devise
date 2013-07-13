@@ -1,0 +1,13 @@
+%p
+  %b Name:
+  = @school.name
+%p
+  %b First name:
+  = @teacher.first_name
+%p
+  %b Last name:
+  = @teacher.last_name
+
+= link_to 'Edit', edit_school_path(@school)
+\|
+= link_to 'Back', schools_path

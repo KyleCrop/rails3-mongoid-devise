@@ -3,7 +3,6 @@
 
   .form-inputs
     = form.input :name
-    = form.association :classroom, collection: Classroom.all
 
   .form-actions
     = form.button :submit
