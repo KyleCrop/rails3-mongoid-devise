@@ -1,4 +1,4 @@
-= simple_form_for @student, html: { class: 'custom' } do |form|
+= simple_form_for @classroom, html: { class: 'custom' } do |form|
   = form.error_notification
 
   .form-inputs
@@ -6,3 +6,6 @@
 
   .form-actions
     = form.button :submit
+
+  = form.association :student
+
