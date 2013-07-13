@@ -1,12 +1,12 @@
-class Student
-  # Dependencies
+class Classroom
+  #Dependencies
   include Mongoid::Document
-  
-  # Relations
+
+  #Relations
   belongs_to :school
   has_and_belongs_to_many :courses
 
-  # Properties
+  #Properties
   field :name, type: String
-  
-end # Student
+
+end #Classroom
