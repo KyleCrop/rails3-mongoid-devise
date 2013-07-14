@@ -1,9 +1,0 @@
-= simple_form_for @school, html: { class: 'custom' } do |form|
-  = form.error_notification
-
-  .form-inputs
-    = form.input :name
-    = form.association :teacher, collection: Teacher.all
-
-  .form-actions
-    = form.button :submit
